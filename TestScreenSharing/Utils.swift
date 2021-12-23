@@ -9,6 +9,10 @@ import Foundation
 import TwilioVideo
 
 // Helper to determine if we're running on simulator or device
+let K_ROOM_NAME = "saurav-sinha"
+let K_TOKEN_BASE_URL = "TOKEN_URL"
+
+
 struct PlatformUtils {
     static let isSimulator: Bool = {
         var isSim = false

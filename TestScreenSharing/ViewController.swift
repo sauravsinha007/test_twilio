@@ -11,8 +11,6 @@ import AVFoundation
 import TwilioVideo
 import ReplayKit
 
-let K_ROOM_NAME = "saurav-sinha"
-
 class ViewController: UIViewController {
 
     // MARK: ----------------------- IBOutlets  -----------------------
@@ -24,7 +22,7 @@ class ViewController: UIViewController {
     // MARK: ----------------------- Properties  -----------------------
     var accessToken = "TWILIO_ACCESS_TOKEN"
     // Configure remote URL to fetch token from
-    var tokenUrl = "TOKEN_URL"
+    var tokenUrl = K_TOKEN_BASE_URL
     public var mRoom: Room?
     public var mCamera: CameraSource?
     public var mLocalVideoTrack: LocalVideoTrack?

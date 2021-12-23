@@ -20,10 +20,10 @@ class SampleHandler: RPBroadcastSampleHandler {
     let audioDevice = ExampleReplayKitAudioCapturer(sampleType: SampleHandler.kAudioSampleType)
 
     var accessToken: String = "TWILIO_ACCESS_TOKEN"
-    let tokenUrl = "TOKEN_URL"
+    let tokenUrl = K_TOKEN_BASE_URL + "saurav-sinha-screenshare"
 
     var statsTimer: Timer?
-    static let kBroadcastSetupInfoRoomNameKey = "saurav-sinha"
+    static let kBroadcastSetupInfoRoomNameKey = K_ROOM_NAME
 
     // Which kind of audio samples we will capture. The example does not mix multiple types of samples together.
     static let kAudioSampleType = RPSampleBufferType.audioMic
