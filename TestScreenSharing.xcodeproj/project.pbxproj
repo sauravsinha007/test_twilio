@@ -1,0 +1,1142 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10ACF8EB77ACF7B3B9BF0B03 /* Pods_TestScreenSharing_ScrennshareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D923DB7CFB71C6C7FAFB809 /* Pods_TestScreenSharing_ScrennshareExtension.framework */; };
+		348513A8F9C331E07CAAA301 /* Pods_TestScreenSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 064E658B9F5915AF21942DE9 /* Pods_TestScreenSharing.framework */; };
+		8F0EEA99CD4F04D22EDEB906 /* Pods_TestScreenSharingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69DBEAE033A168A76ABB4268 /* Pods_TestScreenSharingTests.framework */; };
+		B689D28B3ED1F9DAC85F6DA1 /* Pods_TestScreenSharing_TestScreenSharingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3186914173CA4265C56F6D33 /* Pods_TestScreenSharing_TestScreenSharingUITests.framework */; };
+		E01009DD2771C10100EDF7A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01009DC2771C10100EDF7A6 /* AppDelegate.swift */; };
+		E01009DF2771C10100EDF7A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01009DE2771C10100EDF7A6 /* SceneDelegate.swift */; };
+		E01009E12771C10100EDF7A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01009E02771C10100EDF7A6 /* ViewController.swift */; };
+		E01009E42771C10100EDF7A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01009E22771C10100EDF7A6 /* Main.storyboard */; };
+		E01009E62771C10500EDF7A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01009E52771C10500EDF7A6 /* Assets.xcassets */; };
+		E01009E92771C10500EDF7A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01009E72771C10500EDF7A6 /* LaunchScreen.storyboard */; };
+		E01009F42771C10600EDF7A6 /* TestScreenSharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01009F32771C10600EDF7A6 /* TestScreenSharingTests.swift */; };
+		E01009FE2771C10600EDF7A6 /* TestScreenSharingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01009FD2771C10600EDF7A6 /* TestScreenSharingUITests.swift */; };
+		E0100A002771C10600EDF7A6 /* TestScreenSharingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01009FF2771C10600EDF7A6 /* TestScreenSharingUITestsLaunchTests.swift */; };
+		E0100A0D2771C9E600EDF7A6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0100A0C2771C9E600EDF7A6 /* Utils.swift */; };
+		E0100A0F2771F55400EDF7A6 /* ViewController+CallKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0100A0E2771F55400EDF7A6 /* ViewController+CallKit.swift */; };
+		E0100A112771FDDC00EDF7A6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0100A102771FDDC00EDF7A6 /* Settings.swift */; };
+		E0E0E88927732E8E00A0F395 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E0E88827732E8E00A0F395 /* ReplayKit.framework */; };
+		E0E0E89327732E8E00A0F395 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E0E88827732E8E00A0F395 /* ReplayKit.framework */; };
+		E0E0E89527732E8E00A0F395 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0E0E89427732E8E00A0F395 /* UIKit.framework */; };
+		E0E0E89827732E8E00A0F395 /* BroadcastSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E89727732E8E00A0F395 /* BroadcastSetupViewController.swift */; };
+		E0E0E89C27732E8E00A0F395 /* ScrennshareExtensionSetupUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E0E0E89227732E8E00A0F395 /* ScrennshareExtensionSetupUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E0E0E89F27732E8E00A0F395 /* ScrennshareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E0E0E88727732E8D00A0F395 /* ScrennshareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E0E0E8A82773309F00A0F395 /* SampleHandlerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E8A72773309F00A0F395 /* SampleHandlerConstants.swift */; };
+		E0E0E8A92773309F00A0F395 /* SampleHandlerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E8A72773309F00A0F395 /* SampleHandlerConstants.swift */; };
+		E0E0E8AC27733D9C00A0F395 /* SampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E88B27732E8E00A0F395 /* SampleHandler.swift */; };
+		E0E0E8B427733E6600A0F395 /* ExampleReplayKitAudioCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E8B327733E6500A0F395 /* ExampleReplayKitAudioCapturer.m */; };
+		E0E0E8B627733E7D00A0F395 /* ReplayKitVideoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E8B527733E7D00A0F395 /* ReplayKitVideoSource.swift */; };
+		E0E0E8B827733EBD00A0F395 /* Telecine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E8B727733EBD00A0F395 /* Telecine.swift */; };
+		E0E0E8B9277340D300A0F395 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0100A0C2771C9E600EDF7A6 /* Utils.swift */; };
+		E0E0E8BB2773598200A0F395 /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E0E8BA2773598200A0F395 /* VideoCell.swift */; };
+		E0E0E8BD2773653400A0F395 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0E0E8BC2773653200A0F395 /* VideoCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E01009F02771C10600EDF7A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E01009D12771C10100EDF7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01009D82771C10100EDF7A6;
+			remoteInfo = TestScreenSharing;
+		};
+		E01009FA2771C10600EDF7A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E01009D12771C10100EDF7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01009D82771C10100EDF7A6;
+			remoteInfo = TestScreenSharing;
+		};
+		E0E0E89A27732E8E00A0F395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E01009D12771C10100EDF7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0E0E89127732E8E00A0F395;
+			remoteInfo = ScrennshareExtensionSetupUI;
+		};
+		E0E0E89D27732E8E00A0F395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E01009D12771C10100EDF7A6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E0E0E88627732E8D00A0F395;
+			remoteInfo = ScrennshareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E0E0E8A027732E8E00A0F395 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E0E0E89C27732E8E00A0F395 /* ScrennshareExtensionSetupUI.appex in Embed App Extensions */,
+				E0E0E89F27732E8E00A0F395 /* ScrennshareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00A51F0D4DDD104F79149DE5 /* Pods-TestScreenSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScreenSharing.release.xcconfig"; path = "Target Support Files/Pods-TestScreenSharing/Pods-TestScreenSharing.release.xcconfig"; sourceTree = "<group>"; };
+		064E658B9F5915AF21942DE9 /* Pods_TestScreenSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestScreenSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D923DB7CFB71C6C7FAFB809 /* Pods_TestScreenSharing_ScrennshareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestScreenSharing_ScrennshareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26A3E5615C9A9FBAC5BC759A /* Pods-TestScreenSharing-ScrennshareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScreenSharing-ScrennshareExtension.release.xcconfig"; path = "Target Support Files/Pods-TestScreenSharing-ScrennshareExtension/Pods-TestScreenSharing-ScrennshareExtension.release.xcconfig"; sourceTree = "<group>"; };
+		3186914173CA4265C56F6D33 /* Pods_TestScreenSharing_TestScreenSharingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestScreenSharing_TestScreenSharingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		510A006DA600D713DC2A9DED /* Pods-TestScreenSharingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScreenSharingTests.release.xcconfig"; path = "Target Support Files/Pods-TestScreenSharingTests/Pods-TestScreenSharingTests.release.xcconfig"; sourceTree = "<group>"; };
+		69DBEAE033A168A76ABB4268 /* Pods_TestScreenSharingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestScreenSharingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		780E29EA615A575E485B7C90 /* Pods-TestScreenSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScreenSharing.debug.xcconfig"; path = "Target Support Files/Pods-TestScreenSharing/Pods-TestScreenSharing.debug.xcconfig"; sourceTree = "<group>"; };
+		9EFBCB460CEAFA18AF1E3B7C /* Pods-TestScreenSharingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScreenSharingTests.debug.xcconfig"; path = "Target Support Files/Pods-TestScreenSharingTests/Pods-TestScreenSharingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAA6528D58B67725362A0FCD /* Pods-TestScreenSharing-TestScreenSharingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScreenSharing-TestScreenSharingUITests.debug.xcconfig"; path = "Target Support Files/Pods-TestScreenSharing-TestScreenSharingUITests/Pods-TestScreenSharing-TestScreenSharingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5B605C2AE8B2B6C822643D7 /* Pods-TestScreenSharing-TestScreenSharingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScreenSharing-TestScreenSharingUITests.release.xcconfig"; path = "Target Support Files/Pods-TestScreenSharing-TestScreenSharingUITests/Pods-TestScreenSharing-TestScreenSharingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E01009D92771C10100EDF7A6 /* TestScreenSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScreenSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01009DC2771C10100EDF7A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E01009DE2771C10100EDF7A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E01009E02771C10100EDF7A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E01009E32771C10100EDF7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E01009E52771C10500EDF7A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E01009E82771C10500EDF7A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E01009EA2771C10500EDF7A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E01009EF2771C10600EDF7A6 /* TestScreenSharingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestScreenSharingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01009F32771C10600EDF7A6 /* TestScreenSharingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenSharingTests.swift; sourceTree = "<group>"; };
+		E01009F92771C10600EDF7A6 /* TestScreenSharingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestScreenSharingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E01009FD2771C10600EDF7A6 /* TestScreenSharingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenSharingUITests.swift; sourceTree = "<group>"; };
+		E01009FF2771C10600EDF7A6 /* TestScreenSharingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestScreenSharingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E0100A0C2771C9E600EDF7A6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E0100A0E2771F55400EDF7A6 /* ViewController+CallKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+CallKit.swift"; sourceTree = "<group>"; };
+		E0100A102771FDDC00EDF7A6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		E0E0E88727732E8D00A0F395 /* ScrennshareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScrennshareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E0E88827732E8E00A0F395 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		E0E0E88B27732E8E00A0F395 /* SampleHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandler.swift; sourceTree = "<group>"; };
+		E0E0E88D27732E8E00A0F395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E0E89227732E8E00A0F395 /* ScrennshareExtensionSetupUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScrennshareExtensionSetupUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E0E89427732E8E00A0F395 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E0E0E89727732E8E00A0F395 /* BroadcastSetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BroadcastSetupViewController.swift; sourceTree = "<group>"; };
+		E0E0E89927732E8E00A0F395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0E0E8A72773309F00A0F395 /* SampleHandlerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleHandlerConstants.swift; sourceTree = "<group>"; };
+		E0E0E8B027733E6400A0F395 /* ScrennshareExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrennshareExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		E0E0E8B127733E6500A0F395 /* ExampleReplayKitAudioCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleReplayKitAudioCapturer.h; sourceTree = "<group>"; };
+		E0E0E8B227733E6500A0F395 /* ExampleReplayKitAudioCapturerDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleReplayKitAudioCapturerDispatch.h; sourceTree = "<group>"; };
+		E0E0E8B327733E6500A0F395 /* ExampleReplayKitAudioCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleReplayKitAudioCapturer.m; sourceTree = "<group>"; };
+		E0E0E8B527733E7D00A0F395 /* ReplayKitVideoSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplayKitVideoSource.swift; sourceTree = "<group>"; };
+		E0E0E8B727733EBD00A0F395 /* Telecine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Telecine.swift; sourceTree = "<group>"; };
+		E0E0E8BA2773598200A0F395 /* VideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		E0E0E8BC2773653200A0F395 /* VideoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		E8A2B3D18CA297A0393AD0AE /* Pods-TestScreenSharing-ScrennshareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestScreenSharing-ScrennshareExtension.debug.xcconfig"; path = "Target Support Files/Pods-TestScreenSharing-ScrennshareExtension/Pods-TestScreenSharing-ScrennshareExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E01009D62771C10100EDF7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				348513A8F9C331E07CAAA301 /* Pods_TestScreenSharing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01009EC2771C10600EDF7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F0EEA99CD4F04D22EDEB906 /* Pods_TestScreenSharingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01009F62771C10600EDF7A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B689D28B3ED1F9DAC85F6DA1 /* Pods_TestScreenSharing_TestScreenSharingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E0E88427732E8D00A0F395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E0E88927732E8E00A0F395 /* ReplayKit.framework in Frameworks */,
+				10ACF8EB77ACF7B3B9BF0B03 /* Pods_TestScreenSharing_ScrennshareExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E0E88F27732E8E00A0F395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E0E89327732E8E00A0F395 /* ReplayKit.framework in Frameworks */,
+				E0E0E89527732E8E00A0F395 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		430C6A479AE7EC4261F869CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				780E29EA615A575E485B7C90 /* Pods-TestScreenSharing.debug.xcconfig */,
+				00A51F0D4DDD104F79149DE5 /* Pods-TestScreenSharing.release.xcconfig */,
+				AAA6528D58B67725362A0FCD /* Pods-TestScreenSharing-TestScreenSharingUITests.debug.xcconfig */,
+				B5B605C2AE8B2B6C822643D7 /* Pods-TestScreenSharing-TestScreenSharingUITests.release.xcconfig */,
+				9EFBCB460CEAFA18AF1E3B7C /* Pods-TestScreenSharingTests.debug.xcconfig */,
+				510A006DA600D713DC2A9DED /* Pods-TestScreenSharingTests.release.xcconfig */,
+				E8A2B3D18CA297A0393AD0AE /* Pods-TestScreenSharing-ScrennshareExtension.debug.xcconfig */,
+				26A3E5615C9A9FBAC5BC759A /* Pods-TestScreenSharing-ScrennshareExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D88D1F7AD5572E7FC999C47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				064E658B9F5915AF21942DE9 /* Pods_TestScreenSharing.framework */,
+				3186914173CA4265C56F6D33 /* Pods_TestScreenSharing_TestScreenSharingUITests.framework */,
+				69DBEAE033A168A76ABB4268 /* Pods_TestScreenSharingTests.framework */,
+				E0E0E88827732E8E00A0F395 /* ReplayKit.framework */,
+				E0E0E89427732E8E00A0F395 /* UIKit.framework */,
+				1D923DB7CFB71C6C7FAFB809 /* Pods_TestScreenSharing_ScrennshareExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E01009D02771C10100EDF7A6 = {
+			isa = PBXGroup;
+			children = (
+				E01009DB2771C10100EDF7A6 /* TestScreenSharing */,
+				E01009F22771C10600EDF7A6 /* TestScreenSharingTests */,
+				E01009FC2771C10600EDF7A6 /* TestScreenSharingUITests */,
+				E0E0E88A27732E8E00A0F395 /* ScrennshareExtension */,
+				E0E0E89627732E8E00A0F395 /* ScrennshareExtensionSetupUI */,
+				E01009DA2771C10100EDF7A6 /* Products */,
+				430C6A479AE7EC4261F869CC /* Pods */,
+				9D88D1F7AD5572E7FC999C47 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E01009DA2771C10100EDF7A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E01009D92771C10100EDF7A6 /* TestScreenSharing.app */,
+				E01009EF2771C10600EDF7A6 /* TestScreenSharingTests.xctest */,
+				E01009F92771C10600EDF7A6 /* TestScreenSharingUITests.xctest */,
+				E0E0E88727732E8D00A0F395 /* ScrennshareExtension.appex */,
+				E0E0E89227732E8E00A0F395 /* ScrennshareExtensionSetupUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E01009DB2771C10100EDF7A6 /* TestScreenSharing */ = {
+			isa = PBXGroup;
+			children = (
+				E01009DC2771C10100EDF7A6 /* AppDelegate.swift */,
+				E01009DE2771C10100EDF7A6 /* SceneDelegate.swift */,
+				E01009E02771C10100EDF7A6 /* ViewController.swift */,
+				E0100A0E2771F55400EDF7A6 /* ViewController+CallKit.swift */,
+				E0100A0C2771C9E600EDF7A6 /* Utils.swift */,
+				E0100A102771FDDC00EDF7A6 /* Settings.swift */,
+				E0E0E8BA2773598200A0F395 /* VideoCell.swift */,
+				E0E0E8BC2773653200A0F395 /* VideoCell.xib */,
+				E01009E22771C10100EDF7A6 /* Main.storyboard */,
+				E01009E52771C10500EDF7A6 /* Assets.xcassets */,
+				E01009E72771C10500EDF7A6 /* LaunchScreen.storyboard */,
+				E01009EA2771C10500EDF7A6 /* Info.plist */,
+			);
+			path = TestScreenSharing;
+			sourceTree = "<group>";
+		};
+		E01009F22771C10600EDF7A6 /* TestScreenSharingTests */ = {
+			isa = PBXGroup;
+			children = (
+				E01009F32771C10600EDF7A6 /* TestScreenSharingTests.swift */,
+			);
+			path = TestScreenSharingTests;
+			sourceTree = "<group>";
+		};
+		E01009FC2771C10600EDF7A6 /* TestScreenSharingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E01009FD2771C10600EDF7A6 /* TestScreenSharingUITests.swift */,
+				E01009FF2771C10600EDF7A6 /* TestScreenSharingUITestsLaunchTests.swift */,
+			);
+			path = TestScreenSharingUITests;
+			sourceTree = "<group>";
+		};
+		E0E0E88A27732E8E00A0F395 /* ScrennshareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E0E0E8B527733E7D00A0F395 /* ReplayKitVideoSource.swift */,
+				E0E0E8B727733EBD00A0F395 /* Telecine.swift */,
+				E0E0E8B127733E6500A0F395 /* ExampleReplayKitAudioCapturer.h */,
+				E0E0E8B327733E6500A0F395 /* ExampleReplayKitAudioCapturer.m */,
+				E0E0E8B227733E6500A0F395 /* ExampleReplayKitAudioCapturerDispatch.h */,
+				E0E0E88B27732E8E00A0F395 /* SampleHandler.swift */,
+				E0E0E88D27732E8E00A0F395 /* Info.plist */,
+				E0E0E8A72773309F00A0F395 /* SampleHandlerConstants.swift */,
+				E0E0E8B027733E6400A0F395 /* ScrennshareExtension-Bridging-Header.h */,
+			);
+			path = ScrennshareExtension;
+			sourceTree = "<group>";
+		};
+		E0E0E89627732E8E00A0F395 /* ScrennshareExtensionSetupUI */ = {
+			isa = PBXGroup;
+			children = (
+				E0E0E89727732E8E00A0F395 /* BroadcastSetupViewController.swift */,
+				E0E0E89927732E8E00A0F395 /* Info.plist */,
+			);
+			path = ScrennshareExtensionSetupUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E01009D82771C10100EDF7A6 /* TestScreenSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0100A032771C10600EDF7A6 /* Build configuration list for PBXNativeTarget "TestScreenSharing" */;
+			buildPhases = (
+				831D536B69751147910EFA2C /* [CP] Check Pods Manifest.lock */,
+				E01009D52771C10100EDF7A6 /* Sources */,
+				E01009D62771C10100EDF7A6 /* Frameworks */,
+				E01009D72771C10100EDF7A6 /* Resources */,
+				6A7319DC3DC8D5442EE596E6 /* [CP] Embed Pods Frameworks */,
+				E0E0E8A027732E8E00A0F395 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0E0E89B27732E8E00A0F395 /* PBXTargetDependency */,
+				E0E0E89E27732E8E00A0F395 /* PBXTargetDependency */,
+			);
+			name = TestScreenSharing;
+			productName = TestScreenSharing;
+			productReference = E01009D92771C10100EDF7A6 /* TestScreenSharing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E01009EE2771C10600EDF7A6 /* TestScreenSharingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0100A062771C10600EDF7A6 /* Build configuration list for PBXNativeTarget "TestScreenSharingTests" */;
+			buildPhases = (
+				0B86503352E63E253364AD41 /* [CP] Check Pods Manifest.lock */,
+				E01009EB2771C10600EDF7A6 /* Sources */,
+				E01009EC2771C10600EDF7A6 /* Frameworks */,
+				E01009ED2771C10600EDF7A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E01009F12771C10600EDF7A6 /* PBXTargetDependency */,
+			);
+			name = TestScreenSharingTests;
+			productName = TestScreenSharingTests;
+			productReference = E01009EF2771C10600EDF7A6 /* TestScreenSharingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E01009F82771C10600EDF7A6 /* TestScreenSharingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0100A092771C10600EDF7A6 /* Build configuration list for PBXNativeTarget "TestScreenSharingUITests" */;
+			buildPhases = (
+				D479D2810E9A225BDEBA7803 /* [CP] Check Pods Manifest.lock */,
+				E01009F52771C10600EDF7A6 /* Sources */,
+				E01009F62771C10600EDF7A6 /* Frameworks */,
+				E01009F72771C10600EDF7A6 /* Resources */,
+				7468B552A6C77397B4E7442E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E01009FB2771C10600EDF7A6 /* PBXTargetDependency */,
+			);
+			name = TestScreenSharingUITests;
+			productName = TestScreenSharingUITests;
+			productReference = E01009F92771C10600EDF7A6 /* TestScreenSharingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E0E0E88627732E8D00A0F395 /* ScrennshareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E0E8A627732E8E00A0F395 /* Build configuration list for PBXNativeTarget "ScrennshareExtension" */;
+			buildPhases = (
+				E3C72ACD12E086EBA323445C /* [CP] Check Pods Manifest.lock */,
+				E0E0E88327732E8D00A0F395 /* Sources */,
+				E0E0E88427732E8D00A0F395 /* Frameworks */,
+				E0E0E88527732E8D00A0F395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrennshareExtension;
+			productName = ScrennshareExtension;
+			productReference = E0E0E88727732E8D00A0F395 /* ScrennshareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E0E0E89127732E8E00A0F395 /* ScrennshareExtensionSetupUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0E0E8A527732E8E00A0F395 /* Build configuration list for PBXNativeTarget "ScrennshareExtensionSetupUI" */;
+			buildPhases = (
+				E0E0E88E27732E8E00A0F395 /* Sources */,
+				E0E0E88F27732E8E00A0F395 /* Frameworks */,
+				E0E0E89027732E8E00A0F395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrennshareExtensionSetupUI;
+			productName = ScrennshareExtensionSetupUI;
+			productReference = E0E0E89227732E8E00A0F395 /* ScrennshareExtensionSetupUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E01009D12771C10100EDF7A6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E01009D82771C10100EDF7A6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					E01009EE2771C10600EDF7A6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E01009D82771C10100EDF7A6;
+					};
+					E01009F82771C10600EDF7A6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E01009D82771C10100EDF7A6;
+					};
+					E0E0E88627732E8D00A0F395 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+					};
+					E0E0E89127732E8E00A0F395 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = E01009D42771C10100EDF7A6 /* Build configuration list for PBXProject "TestScreenSharing" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E01009D02771C10100EDF7A6;
+			productRefGroup = E01009DA2771C10100EDF7A6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E01009D82771C10100EDF7A6 /* TestScreenSharing */,
+				E01009EE2771C10600EDF7A6 /* TestScreenSharingTests */,
+				E01009F82771C10600EDF7A6 /* TestScreenSharingUITests */,
+				E0E0E88627732E8D00A0F395 /* ScrennshareExtension */,
+				E0E0E89127732E8E00A0F395 /* ScrennshareExtensionSetupUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E01009D72771C10100EDF7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01009E92771C10500EDF7A6 /* LaunchScreen.storyboard in Resources */,
+				E0E0E8BD2773653400A0F395 /* VideoCell.xib in Resources */,
+				E01009E62771C10500EDF7A6 /* Assets.xcassets in Resources */,
+				E01009E42771C10100EDF7A6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01009ED2771C10600EDF7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01009F72771C10600EDF7A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E0E88527732E8D00A0F395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E0E89027732E8E00A0F395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B86503352E63E253364AD41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestScreenSharingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A7319DC3DC8D5442EE596E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestScreenSharing/Pods-TestScreenSharing-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestScreenSharing/Pods-TestScreenSharing-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestScreenSharing/Pods-TestScreenSharing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7468B552A6C77397B4E7442E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestScreenSharing-TestScreenSharingUITests/Pods-TestScreenSharing-TestScreenSharingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestScreenSharing-TestScreenSharingUITests/Pods-TestScreenSharing-TestScreenSharingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestScreenSharing-TestScreenSharingUITests/Pods-TestScreenSharing-TestScreenSharingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		831D536B69751147910EFA2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestScreenSharing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D479D2810E9A225BDEBA7803 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestScreenSharing-TestScreenSharingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3C72ACD12E086EBA323445C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestScreenSharing-ScrennshareExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E01009D52771C10100EDF7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0100A112771FDDC00EDF7A6 /* Settings.swift in Sources */,
+				E0E0E8BB2773598200A0F395 /* VideoCell.swift in Sources */,
+				E01009E12771C10100EDF7A6 /* ViewController.swift in Sources */,
+				E01009DD2771C10100EDF7A6 /* AppDelegate.swift in Sources */,
+				E0E0E8A82773309F00A0F395 /* SampleHandlerConstants.swift in Sources */,
+				E01009DF2771C10100EDF7A6 /* SceneDelegate.swift in Sources */,
+				E0100A0D2771C9E600EDF7A6 /* Utils.swift in Sources */,
+				E0100A0F2771F55400EDF7A6 /* ViewController+CallKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01009EB2771C10600EDF7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01009F42771C10600EDF7A6 /* TestScreenSharingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E01009F52771C10600EDF7A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E01009FE2771C10600EDF7A6 /* TestScreenSharingUITests.swift in Sources */,
+				E0100A002771C10600EDF7A6 /* TestScreenSharingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E0E88327732E8D00A0F395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E0E8B827733EBD00A0F395 /* Telecine.swift in Sources */,
+				E0E0E8A92773309F00A0F395 /* SampleHandlerConstants.swift in Sources */,
+				E0E0E8AC27733D9C00A0F395 /* SampleHandler.swift in Sources */,
+				E0E0E8B627733E7D00A0F395 /* ReplayKitVideoSource.swift in Sources */,
+				E0E0E8B427733E6600A0F395 /* ExampleReplayKitAudioCapturer.m in Sources */,
+				E0E0E8B9277340D300A0F395 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0E0E88E27732E8E00A0F395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0E0E89827732E8E00A0F395 /* BroadcastSetupViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E01009F12771C10600EDF7A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E01009D82771C10100EDF7A6 /* TestScreenSharing */;
+			targetProxy = E01009F02771C10600EDF7A6 /* PBXContainerItemProxy */;
+		};
+		E01009FB2771C10600EDF7A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E01009D82771C10100EDF7A6 /* TestScreenSharing */;
+			targetProxy = E01009FA2771C10600EDF7A6 /* PBXContainerItemProxy */;
+		};
+		E0E0E89B27732E8E00A0F395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0E0E89127732E8E00A0F395 /* ScrennshareExtensionSetupUI */;
+			targetProxy = E0E0E89A27732E8E00A0F395 /* PBXContainerItemProxy */;
+		};
+		E0E0E89E27732E8E00A0F395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E0E0E88627732E8D00A0F395 /* ScrennshareExtension */;
+			targetProxy = E0E0E89D27732E8E00A0F395 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E01009E22771C10100EDF7A6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E01009E32771C10100EDF7A6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E01009E72771C10500EDF7A6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E01009E82771C10500EDF7A6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0100A012771C10600EDF7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0100A022771C10600EDF7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0100A042771C10600EDF7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780E29EA615A575E485B7C90 /* Pods-TestScreenSharing.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY42U55RFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestScreenSharing/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera use";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone use";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureNetwork.KureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0100A052771C10600EDF7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A51F0D4DDD104F79149DE5 /* Pods-TestScreenSharing.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY42U55RFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestScreenSharing/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera use";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Microphone use";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureNetwork.KureApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E0100A072771C10600EDF7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EFBCB460CEAFA18AF1E3B7C /* Pods-TestScreenSharingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureApp.TestScreenSharingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestScreenSharing.app/TestScreenSharing";
+			};
+			name = Debug;
+		};
+		E0100A082771C10600EDF7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510A006DA600D713DC2A9DED /* Pods-TestScreenSharingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureApp.TestScreenSharingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestScreenSharing.app/TestScreenSharing";
+			};
+			name = Release;
+		};
+		E0100A0A2771C10600EDF7A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAA6528D58B67725362A0FCD /* Pods-TestScreenSharing-TestScreenSharingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureApp.TestScreenSharingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestScreenSharing;
+			};
+			name = Debug;
+		};
+		E0100A0B2771C10600EDF7A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5B605C2AE8B2B6C822643D7 /* Pods-TestScreenSharing-TestScreenSharingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureApp.TestScreenSharingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TestScreenSharing;
+			};
+			name = Release;
+		};
+		E0E0E8A127732E8E00A0F395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A2B3D18CA297A0393AD0AE /* Pods-TestScreenSharing-ScrennshareExtension.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY42U55RFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrennshareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrennshareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureNetwork.KureApp.ScreenshareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ScrennshareExtension/ScrennshareExtension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0E0E8A227732E8E00A0F395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A3E5615C9A9FBAC5BC759A /* Pods-TestScreenSharing-ScrennshareExtension.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY42U55RFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrennshareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrennshareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureNetwork.KureApp.ScreenshareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ScrennshareExtension/ScrennshareExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E0E0E8A327732E8E00A0F395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY42U55RFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrennshareExtensionSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrennshareExtensionSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureNetwork.KureApp.ScrennshareExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E0E0E8A427732E8E00A0F395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JY42U55RFK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrennshareExtensionSetupUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScrennshareExtensionSetupUI;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KureNetwork.KureApp.ScrennshareExtensionSetupUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E01009D42771C10100EDF7A6 /* Build configuration list for PBXProject "TestScreenSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0100A012771C10600EDF7A6 /* Debug */,
+				E0100A022771C10600EDF7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0100A032771C10600EDF7A6 /* Build configuration list for PBXNativeTarget "TestScreenSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0100A042771C10600EDF7A6 /* Debug */,
+				E0100A052771C10600EDF7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0100A062771C10600EDF7A6 /* Build configuration list for PBXNativeTarget "TestScreenSharingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0100A072771C10600EDF7A6 /* Debug */,
+				E0100A082771C10600EDF7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0100A092771C10600EDF7A6 /* Build configuration list for PBXNativeTarget "TestScreenSharingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0100A0A2771C10600EDF7A6 /* Debug */,
+				E0100A0B2771C10600EDF7A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E0E8A527732E8E00A0F395 /* Build configuration list for PBXNativeTarget "ScrennshareExtensionSetupUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E0E8A327732E8E00A0F395 /* Debug */,
+				E0E0E8A427732E8E00A0F395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0E0E8A627732E8E00A0F395 /* Build configuration list for PBXNativeTarget "ScrennshareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0E0E8A127732E8E00A0F395 /* Debug */,
+				E0E0E8A227732E8E00A0F395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E01009D12771C10100EDF7A6 /* Project object */;
+}
